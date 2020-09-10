@@ -1,0 +1,107 @@
+.menu{
+
+    margin-left: 120px;
+    margin-top: -310px;
+    margin-bottom: 20px;
+    background: white;
+    box-shadow: 0 4px 2px -2px #dddbdb;
+    font-family: Arial,Helvetica,sans-serif;
+    letter-spacing: 0.1rem;
+
+
+        button{
+            padding: 3px 4px;
+        }
+        li{
+            transition: 0.2s;
+            position: relative;
+            margin-left: 10px;
+                a{
+                    color:#373737;
+                }
+                a:hover {
+                    color:#D0B491;
+                }
+                a::before{
+                    content: '';
+                    color: #caaa81;
+                    position: absolute;
+                    bottom: 5%;
+                    top: 5%;
+                    left: 5%;
+                    right: 5%;
+        
+                    border-bottom: 2px solid;
+                    transition: 0.3s;
+                    transform: scaleX(0);
+                }
+                a:hover::before{
+                    transform: scale(1);
+                }
+        }
+       
+        i{
+            color: black;
+            font-size: 2rem;
+
+        }
+        i:hover{
+            color: #414141;
+        }
+        
+}
+.logo{
+    height: 50px;
+    width: 212px;
+}
+
+
+@media only screen and (max-width: 991px) {
+    .menu{
+        justify-content: center;
+        margin-left: 0px;
+        margin-top: -310px;
+        margin-bottom: 20px;
+            ul{
+                margin: auto
+            }
+            li{
+                text-align: center;
+                margin: 5px 0px;
+            }
+            
+            button{
+                text-align: center;
+                border: none;
+            }
+            .navbar-brand{
+                text-align: center;
+            }
+           
+            .collapsed{
+                transform: rotate(180deg);
+            }
+           
+            i{
+                font-size: 1.8rem;
+            }
+            .logo{
+                height: 44px;
+                width: 200px;
+            }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .menu{
+        margin-top: auto;
+        .logo{
+            height: 41px;
+            width: 190px;
+        }
+        i{
+            font-size: 1.6rem;
+        }
+      
+    }
+}

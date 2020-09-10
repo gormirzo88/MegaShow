@@ -1,0 +1,48 @@
+
+.weddings-top {
+  background-image: url("/img/poto.jpg");
+  height: 42rem;
+  z-index: -1;
+
+  object-fit: contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  flex: 1;
+}
+section{
+  margin: auto 6rem;
+  margin-top: -30rem;
+  color: white;
+  width: 30rem;
+  z-index:2;
+  margin-bottom: 30rem;
+    h1{
+      font-size:4rem;
+    }
+    p{
+      font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+  .weddings-top {
+    height: 30rem;
+    background-position: center;
+
+  }
+  section{
+    color:black;
+    width: auto;
+    margin: auto 1rem;
+      h1{
+        font-size: 3rem;
+      }
+  }
+}
+
+
+
+
+
